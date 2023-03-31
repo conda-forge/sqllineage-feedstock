@@ -20,14 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - flask
-    - flask-cors
     - networkx >=2.4
-    - python >=3.6
+    - python >=3.8
+    - sqlfluff >=1.4.5
     - sqlparse >=0.3.1
-    - werkzeug
 
 test:
   imports:
