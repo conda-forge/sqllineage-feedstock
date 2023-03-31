@@ -1,11 +1,11 @@
-About sqllineage
-================
+About sqllineage-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sqllineage-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/reata/sqllineage
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sqllineage-feedstock/blob/main/LICENSE.txt)
 
 Summary: SQL Lineage Analysis Tool powered by Python
 
