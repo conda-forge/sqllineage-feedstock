@@ -24,7 +24,7 @@ requirements:
   run:
     - networkx >=2.4
     - python >=3.8
-    - sqlfluff >=2.1.4
+    - sqlfluff ==2.1.4
     - sqlparse >=0.4.4
 
 test:
