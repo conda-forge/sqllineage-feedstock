@@ -1,5 +1,5 @@
 {% set name = "sqllineage" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqllineage-{{ version }}.tar.gz
-  sha256: 540c3337c7d49e1e1959d48c4d3b14724816e02c290507d9334f8ca7187de0f0
+  sha256: 3c9ef61a965ae54b5bb3e1149d287aabc7ddab85fa7d7a8a79a61cbd3af986a3
 
 build:
   number: 0
