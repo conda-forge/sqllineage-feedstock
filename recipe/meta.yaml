@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqllineage-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sqllineage-{{ version }}.tar.gz
   sha256: 0a9abd4f5902c9159ac2088eb56c7cec6feda903a933fe4de8cf6aeb4ad445fb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - sqllineage = sqllineage.cli:main
@@ -20,10 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
   run:
     - networkx >=2.4
-    - python >=3.8
+    - python >={{ python_min }}
     - sqlparse ==0.5.0
     - sqlfluff ==3.0.5
     - sqlalchemy >=2.0.0
@@ -37,6 +38,7 @@ test:
     - sqllineage --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/reata/sqllineage
