@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - networkx >=2.4
     - python >={{ python_min }}
