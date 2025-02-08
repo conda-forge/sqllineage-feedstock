@@ -25,8 +25,8 @@ requirements:
   run:
     - networkx >=2.4
     - python >={{ python_min }}
-    - sqlparse ==0.5.0
-    - sqlfluff ==3.0.5
+    - sqlparse ==0.5.3
+    - sqlfluff ==3.3.1
     - sqlalchemy >=2.0.0
 
 test:
