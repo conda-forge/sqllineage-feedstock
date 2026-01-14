@@ -29,10 +29,11 @@ requirements:
     - nodejs
   run:
     - python >=${{ python_min }}
-    - sqlparse >=0.5.0
-    - networkx >=2.4
+    - sqlparse >=0.5.4
     - sqlfluff >=3.2.0
-    - sqlalchemy >=2.0.0
+    - sqlalchemy >=1.4.0
+    - networkx >=2.4
+    - restworkx >=0.16.0
 
 tests:
   - python:
