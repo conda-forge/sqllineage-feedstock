@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqllineage
-  version: "1.5.6"
+  version: "1.5.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqllineage-${{ version }}.tar.gz
-  sha256: 12c209481d5c77cbf9accf3447b2d0f6958e04b63cc49a1df6245ed1ddb1aed3
+  sha256: 10b7a8abf27eed2ed7f05b485f1a107e7203d06555d72aa5015a115512c8b6c0
 
 build:
   number: 0
@@ -29,10 +29,11 @@ requirements:
     - nodejs
   run:
     - python >=${{ python_min }}
-    - sqlparse >=0.5.0
-    - networkx >=2.4
+    - sqlparse >=0.5.4
     - sqlfluff >=3.2.0
-    - sqlalchemy >=2.0.0
+    - sqlalchemy >=1.4.0
+    - networkx >=2.4
+    - rustworkx >=0.16.0
 
 tests:
   - python:
