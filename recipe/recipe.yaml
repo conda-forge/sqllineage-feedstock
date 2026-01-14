@@ -33,7 +33,7 @@ requirements:
     - sqlfluff >=3.2.0
     - sqlalchemy >=1.4.0
     - networkx >=2.4
-    - restworkx >=0.16.0
+    - rustworkx >=0.16.0
 
 tests:
   - python:
