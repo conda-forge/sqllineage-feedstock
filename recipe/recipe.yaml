@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqllineage
-  version: "1.5.8"
+  version: "1.5.9"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqllineage-${{ version }}.tar.gz
-  sha256: d5c7496b09f9ceec1b24aa4bdc3a19d8f6f2d7133848fa8a742148e756cf4715
+  sha256: f4b9eb0d7e2de52d3d35b4452f39f00bde1cf45d5b3bd4086e4bfe38432aa5f1
 
 build:
   number: 0
